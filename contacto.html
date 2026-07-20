@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a la Finca Ganadera El Progreso. Dirección, teléfono, formulario y mapa.">
+  <title>Contacto | El Progreso</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Logotipo Finca El Progreso" width="44" height="44">
+        <span class="brand-text">El Progreso</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html" class="btn btn-nav active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Hablemos</p>
+        <h1>Contacto</h1>
+        <p class="lead">Estamos listos para atender clientes, visitantes e inversionistas.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-info reveal">
+          <h2>Información</h2>
+          <ul class="info-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <strong>Dirección</strong>
+                <p>Carretera Principal Km 12, Zona Rural, Municipio Agropecuario</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <div>
+                <strong>Teléfono</strong>
+                <p><a href="tel:+584120000000">+58 412-000-0000</a></p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <div>
+                <strong>Correo electrónico</strong>
+                <p><a href="mailto:contacto@fincaelprogreso.com">contacto@fincaelprogreso.com</a></p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <div>
+                <strong>Horario de atención</strong>
+                <p>Lunes a sabado: 7:00 a.m. - 5:00 p.m.<br>Domingo: cerrado</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="contact-form-wrap reveal">
+          <h2>Formulario de contacto</h2>
+          <p>Envíanos tu mensaje. Esta es una simulación: no se envían datos a un servidor.</p>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">
+              <span class="field-error" data-for="nombre"></span>
+            </div>
+            <div class="form-row">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="tu@correo.com">
+              <span class="field-error" data-for="correo"></span>
+            </div>
+            <div class="form-row">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+58 400-0000000">
+              <span class="field-error" data-for="telefono"></span>
+            </div>
+            <div class="form-row">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Selecciona una opción</option>
+                <option value="productos">Consulta de productos</option>
+                <option value="servicios">Solicitud de servicios</option>
+                <option value="visita">Agendar visita</option>
+                <option value="inversion">Información para inversionistas</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="field-error" data-for="asunto"></span>
+            </div>
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+              <span class="field-error" data-for="mensaje"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <p class="form-success" id="formSuccess" hidden role="status">
+              <i class="fa-solid fa-circle-check"></i> ¡Gracias! Tu mensaje fue registrado correctamente (simulación).
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-map">
+      <div class="container">
+        <h2>Ubicación</h2>
+        <p class="lead">Encuéntranos en el mapa. Puedes ajustar las coordenadas cuando tengas la ubicación real.</p>
+        <div class="map-frame reveal">
+          <iframe
+            title="Mapa de ubicación de Finca El Progreso"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125899.215!2d-66.9036!3d10.4806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c33391962772c6f%3A0x6c8f0b5f5c1b1b1b!2sCaracas!5e0!3m2!1ses!2sve!4v1700000000000"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-footer">
+          <img src="images/logo.svg" alt="" width="40" height="40">
+          <span>El Progreso</span>
+        </div>
+        <p>Finca ganadera familiar. Producción de leche, carne y servicios agropecuarios.</p>
+      </div>
+      <div>
+        <h3>Navegación</h3>
+        <ul class="footer-links">
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Carretera Principal Km 12, Zona Rural</li>
+          <li><i class="fa-solid fa-phone"></i> +58 412-000-0000</li>
+          <li><i class="fa-solid fa-envelope"></i> contacto@fincaelprogreso.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Finca Ganadera El Progreso. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

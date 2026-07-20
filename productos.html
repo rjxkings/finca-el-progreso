@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Productos de la Finca El Progreso: leche, queso, yogur, ganado y carne premium.">
+  <title>Productos | El Progreso</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Logotipo Finca El Progreso" width="44" height="44">
+        <span class="brand-text">El Progreso</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html" class="active">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html" class="btn btn-nav">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Catálogo</p>
+        <h1>Productos</h1>
+        <p class="lead">Alimentos y genética bovina con precios referenciales para orientación comercial.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container product-grid">
+        <article class="product-card reveal">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80" alt="Leche fresca embotellada" width="800" height="600" loading="lazy">
+          </div>
+          <div class="product-body">
+            <h2>Leche fresca</h2>
+            <p>Leche entera de ordeño diario, refrigerada y lista para consumo o procesamiento.</p>
+            <p class="price">Desde <strong>$1.20</strong> / litro</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80" alt="Queso artesanal" width="800" height="600" loading="lazy">
+          </div>
+          <div class="product-body">
+            <h2>Queso artesanal</h2>
+            <p>Queso fresco elaborado con leche de la finca, de textura suave y sabor limpio.</p>
+            <p class="price">Desde <strong>$4.50</strong> / 500 g</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="Yogur natural" width="800" height="600" loading="lazy">
+          </div>
+          <div class="product-body">
+            <h2>Yogur</h2>
+            <p>Yogur natural cremoso, ideal para desayunos y recetas saludables.</p>
+            <p class="price">Desde <strong>$2.80</strong> / 1 kg</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1570042223119-6301b9c1c0c0?auto=format&fit=crop&w=800&q=80" alt="Ganado para reproducción" width="800" height="600" loading="lazy">
+          </div>
+          <div class="product-body">
+            <h2>Ganado para reproducción</h2>
+            <p>Animales seleccionados por condición corporal, sanidad y potencial genético.</p>
+            <p class="price">Desde <strong>$850</strong> / animal</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80" alt="Carne premium" width="800" height="600" loading="lazy">
+          </div>
+          <div class="product-body">
+            <h2>Carne premium</h2>
+            <p>Cortes seleccionados de excelente terneza, destinados a consumidores exigentes.</p>
+            <p class="price">Desde <strong>$8.90</strong> / kg</p>
+          </div>
+        </article>
+      </div>
+      <p class="container price-note">* Precios referenciales en USD. Pueden variar según volumen, temporada y disponibilidad.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-footer">
+          <img src="images/logo.svg" alt="" width="40" height="40">
+          <span>El Progreso</span>
+        </div>
+        <p>Finca ganadera familiar. Producción de leche, carne y servicios agropecuarios.</p>
+      </div>
+      <div>
+        <h3>Navegación</h3>
+        <ul class="footer-links">
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Carretera Principal Km 12, Zona Rural</li>
+          <li><i class="fa-solid fa-phone"></i> +58 412-000-0000</li>
+          <li><i class="fa-solid fa-envelope"></i> contacto@fincaelprogreso.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Finca Ganadera El Progreso. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finca Ganadera El Progreso. Produccion de leche y carne bovina.">
+  <title>El Progreso | Finca Ganadera</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Inicio El Progreso">
+        <img src="images/logo.svg" alt="Logotipo Finca El Progreso" width="44" height="44">
+        <span class="brand-text">El Progreso</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html" class="btn btn-nav">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Banner principal">
+      <div class="hero-media" role="img" aria-label="Pastizales y ganado de la finca El Progreso"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="images/logo.svg" alt="Logotipo Finca El Progreso" width="88" height="88">
+        <h1 class="hero-brand">El Progreso</h1>
+        <p class="hero-tagline">Produccion de leche y carne con calidad y compromiso familiar</p>
+        <div class="hero-actions">
+          <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+          <a href="servicios.html" class="btn btn-ghost">Ver servicios</a>
+        </div>
+      </div>
+      <a href="#destacados" class="scroll-hint" aria-label="Bajar al contenido">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <section class="section section-intro" id="destacados">
+      <div class="container">
+        <p class="eyebrow">Finca familiar</p>
+        <h2>Leche y carne de nuestra finca</h2>
+        <p class="lead">En El Progreso trabajamos con buenas practicas de campo y un equipo dedicado para ofrecer productos frescos y servicios agropecuarios.</p>
+        <div class="feature-strip">
+          <article class="feature-item reveal">
+            <i class="fa-solid fa-cow" aria-hidden="true"></i>
+            <h3>Ganado de calidad</h3>
+            <p>Rebaños cuidados con trazabilidad y bienestar animal.</p>
+          </article>
+          <article class="feature-item reveal">
+            <i class="fa-solid fa-bottle-droplet" aria-hidden="true"></i>
+            <h3>Lácteos frescos</h3>
+            <p>Producción higiénica desde el ordeño hasta su mesa.</p>
+          </article>
+          <article class="feature-item reveal">
+            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            <h3>Proceso sostenible</h3>
+            <p>Pastoreo rotativo y uso responsable de recursos naturales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-split">
+      <div class="split-media">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1200&q=80" alt="Ganado pastando en pastizales verdes" width="1200" height="800" loading="lazy">
+      </div>
+      <div class="split-copy">
+        <p class="eyebrow">Compromiso</p>
+        <h2>Una finca familiar en crecimiento</h2>
+        <p>Somos una empresa familiar dedicada a la produccion de leche y carne bovina. Con este sitio queremos dar a conocer nuestros productos, servicios y la forma en que trabajamos.</p>
+        <a href="nosotros.html" class="text-link">Conoce nuestra historia <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container cta-box">
+        <h2>¿Listo para conocer nuestros productos?</h2>
+        <p>Visítanos, escríbenos o agenda una asesoría agropecuaria con nuestro equipo.</p>
+        <a href="contacto.html" class="btn btn-primary">Ir a contacto</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-footer">
+          <img src="images/logo.svg" alt="" width="40" height="40">
+          <span>El Progreso</span>
+        </div>
+        <p>Finca ganadera familiar. Producción de leche, carne y servicios agropecuarios.</p>
+      </div>
+      <div>
+        <h3>Navegación</h3>
+        <ul class="footer-links">
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Carretera Principal Km 12, Zona Rural</li>
+          <li><i class="fa-solid fa-phone"></i> +58 412-000-0000</li>
+          <li><i class="fa-solid fa-envelope"></i> contacto@fincaelprogreso.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Finca Ganadera El Progreso. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
